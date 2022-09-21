@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Калькулятор расчета базового обмена веществ</title>
+    </head>
+    <body>
+        <form action="http://192.168.1.71:8000/cgi-bin/main.py" method="get">
+            <label for="sex">Пол</label>
+            <input type="radio" name="sex" value="М" id="sex">
+            <input type="radio" name="sex" value="Ж">
+            </br>
+
+            <label for="age">Возраст в годах:</label>
+            <input type="number" name="age" id="age">
+            </br>
+
+            <label for="height">Рост в сантиметрах:</label>
+            <input type="number" name="height">
+            </br>
+
+            <label for="weight">Вес в килограммах:</label>
+            <input type="number" name="weight">
+        </form>
+
+        <label for="activity">Уровень физической активности:</label>
+        <select id="activity" name="activity">
+            <option value="1">Основной (базовый) уровень обмена веществ</option>
+            <option value="1.2">Минимальные нагрузки (сидячая работа)</option>
+            <option value="1.375">Необременительные тренировки 3 раза в неделю</option>
+            <option value="1.4625">Тренировки 5 раз в неделю (работа средней тяжести)</option>
+            <option value="1.550">Интенсивные тренировки 5 раз в неделю</option>
+            <option value="1.6375">Ежедневные тренировки</option>
+            <option value="1.725">Ежедневные интенсивные тренировки или занятия 2 раза в день</option>
+            <option value="1.9">Тяжелая физическая работа или интенсивные тренировки 2 раза в день</option>
+        </select>
+        </br>
+
+        <input type="submit">
+    </body>
+</html>
